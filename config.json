@@ -6,9 +6,9 @@
         },
         "cn" : {
             "provider": "spaces",
-            "name": "openblock1",
-            "path": "resource1",
-            "region": "sgp1"
+            "name": "openblock",
+            "path": "resource",
+            "region": "sgp11"
         }
     }
 }

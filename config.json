@@ -2,12 +2,12 @@
     "updater": {
         "default": {
             "provider": "github",
-            "repo": "openblockcc/external-resources-v2"
+            "repo": "haib78/external-resources-v2"
         },
         "cn" : {
             "provider": "spaces",
-            "name": "openblock",
-            "path": "resource",
+            "name": "openblock1",
+            "path": "resource1",
             "region": "sgp1"
         }
     }

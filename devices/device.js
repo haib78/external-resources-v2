@@ -11,7 +11,5 @@ module.exports = [
     'ZQrobot201',
     //'makeyMakey',
     // Third party
-    'ironKit_arduinoUno',
-    'QDPRobot_arduinoUnoUltra',
-    'QDPRobotC02_arduinoEsp32'
+    'ZQrobot202_arduinoEsp32'
 ];

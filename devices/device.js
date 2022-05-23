@@ -8,8 +8,9 @@ module.exports = [
     'arduinoEsp8266',
     'microbit',
     'microbitV2',
-    'ZQrobot201',
     //'makeyMakey',
     // Third party
-    'ZQrobot202_arduinoEsp32'
+    //'ironKit_arduinoUno',
+    //'QDPRobot_arduinoUnoUltra',
+    'QDPRobotC02_arduinoEsp32'
 ];

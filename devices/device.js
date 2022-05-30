@@ -1,5 +1,6 @@
 module.exports = [
     // Buid-in device
+    'ZQrobot201',
     'arduinoUno',
     'arduinoNano',
     'arduinoLeonardo',

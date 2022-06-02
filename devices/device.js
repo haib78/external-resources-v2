@@ -7,8 +7,8 @@ module.exports = [
     'arduinoMega2560',
     'arduinoEsp32',
     'arduinoEsp8266',
-    'microbit',
-    'microbitV2',
+    //'microbit',
+    //'microbitV2',
     //'makeyMakey',
     // Third party
     //'ironKit_arduinoUno',

@@ -14,10 +14,13 @@ function addGenerator (Blockly) {
     };
 
     Blockly.Arduino.rgbLedStrip_setPixelColor = function (block) {
-        const no = Blockly.Arduino.valueToCode(block, 'NO', Blockly.Arduino.ORDER_ATOMIC);
+        const pin = block.getFieldValue('PIN');
         const colour = Blockly.Arduino.valueToCode(block, 'COLOR', Blockly.Arduino.ORDER_ATOMIC).replace('#', '0x');
-
-        return `ledStrip.setPixelColor(${no} - 1, ${colour});\n`;
+        Blockly.Arduino.includes_.rgbLedStrip_init = `#include <Adafruit_NeoPixel.h>`;
+        Blockly.Arduino.definitions_.rgbLedStrip_init =
+        `Adafruit_NeoPixel ledStrip(1, ${pin}, NEO_GRB + NEO_KHZ800);`;
+        Blockly.Arduino.setups_.oled_page = 'ledStrip.begin();\n  ledStrip.setBrightness(255);';
+        return `ledStrip.setPixelColor(0, ${colour});\nledStrip.show();\n`;
     };
 
     Blockly.Arduino.rgbLedStrip_fill = function (block) {

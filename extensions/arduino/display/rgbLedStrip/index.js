@@ -1,12 +1,9 @@
 const rgbLedStrip = formatMessage => ({
-    name: formatMessage({
-        id: 'rgbLedStrip.name',
-        default: 'RGB LED Strip'
-    }),
+    name:'RGB灯',
     extensionId: 'rgbLedStrip',
     version: '1.0.0',
     supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo',
-        'arduinoMega2560', 'arduinoEsp8266', 'arduinoEsp32'],
+        'arduinoMega2560', 'arduinoEsp8266', 'arduinoEsp32','ZQrobot201','ZQrobot202'],
     author: 'ArthurZheng',
     iconURL: `asset/rgbLedStrip.png`,
     description: formatMessage({

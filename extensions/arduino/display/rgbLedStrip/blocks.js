@@ -4,10 +4,10 @@
 function addBlocks (Blockly) {
     const colour = '#7700FF';
     const secondaryColour = '#4400B3';
-
+    
     const digitalPins = Blockly.getMainWorkspace().getFlyout()
         .getFlyoutItems()
-        .find(block => block.type === 'arduino_pin_setDigitalOutput')
+        .find(block => block.type === 'arduino_pin_ZQsetDigitalOutput')
         .getField('PIN')
         .getOptions();
 
@@ -36,11 +36,12 @@ function addBlocks (Blockly) {
     Blockly.Blocks.rgbLedStrip_setPixelColor = {
         init: function () {
             this.jsonInit({
-                message0: Blockly.Msg.RGBLEDSTRIP_SETPIXELCOLOR,
+                message0:'设置RGB灯 端口 %1 颜色 %2',
                 args0: [
                     {
-                        type: 'input_value',
-                        name: 'NO'
+                        type: 'field_dropdown',
+                        name: 'PIN',
+                        options: digitalPins
                     },
                     {
                         type: 'input_value',

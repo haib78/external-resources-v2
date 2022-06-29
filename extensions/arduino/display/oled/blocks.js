@@ -2,8 +2,30 @@
 /* eslint-disable max-len */
 /* eslint-disable require-jsdoc */
 function addBlocks (Blockly) {
-    const colour = '#C0C0C0';
-    const secondaryColour = '#A9A9A9';
+    const colour = '#42CCFF';
+    const secondaryColour = '#00BFFF';
+
+    Blockly.Blocks.oled_page = {
+        init: function() {
+            this.jsonInit({
+              message0:'%1 显示刷新',
+              message1: "%1", // Statement
+              args0: [
+                {
+                }
+              ],
+              args1: [
+                {
+                  "type": "input_statement",
+                  "name": "DO"
+                }
+              ],
+              colour: colour,
+              secondaryColour: secondaryColour,
+              extensions: ["shape_statement"]
+            });
+      }
+    };
 
     Blockly.Blocks.oled_init = {
         init: function () {

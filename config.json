@@ -4,11 +4,12 @@
             "provider": "github",
             "repo": "haib78/external-resources-v2"
         },
-        "cn" : {
+        "cn": {
             "provider": "spaces",
             "name": "openblock",
             "path": "resource",
             "region": "sgp11"
         }
     }
+
 }

@@ -1,20 +1,13 @@
-const ZQrobot = formatMessage => ({
+const ZQrobot = () => ({
     name: 'ZQrobot',
     extensionId: 'ZQrobot',
-    //version: '0.0.1',
-    supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoMini', 'arduinoLeonardo',
-        'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp8266','ZQrobot201','ZQrobot202'],
-    //author: 'ArthurZheng',
-    iconURL: `asset/oled.png`,
-    featured: true,
+    supportDevice: ['ZQrobot201','ZQrobot202'],
+    hide: true,
     blocks: 'blocks.js',
     generator: 'generator.js',
     toolbox: 'toolbox.js',
     msg: 'msg.js',
-    library: 'lib',
-    official: true,
-    tags: ['display']
-    //helpLink: 'https://openblockcc.gitee.io/wiki/main'
+    library: 'lib'
 });
 
 module.exports = ZQrobot;
